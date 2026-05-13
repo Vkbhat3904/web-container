@@ -13,7 +13,7 @@ pipeline{
     }
     stage("Run Docker Container"){
       steps{
-        bat "docker run -d -p 8081:80 --name web-container1 cicd-static-app"
+        bat "docker run -d -p 8082:80 --name web-container1 cicd-static-app"
       }
     }
   }
